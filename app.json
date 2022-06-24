@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "drive-photo-saver",
+    "slug": "drive-photo-saver",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
