@@ -6,7 +6,10 @@ import plotly.express as px
 
 base_credit = pd.read_csv('./credit_data.csv')
 
-np.unique(base_credit['default'], return_counts=True)
+# np.unique(base_credit['default'], return_counts=True)
+# sns.countplot(x = base_credit['default'])
+# plt.hist(x = base_credit['age'])
 
-sns.countplot(x = base_credit['default'])
-plt.show()
+graphic = px.scatter_matrix(base_credit, dimensions=['age', 'income', 'loan'])
+graphic.show()
+# plt.show()
